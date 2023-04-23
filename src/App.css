@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #26532B;
+  color: #FFFFFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
+  background-color: #399E5A;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  padding: 20px;
+}
+
+.post-card {
+  width: 300px;
+  padding: 20px;
+  background-color: #5ABCB9;
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.post-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-card h3,
+.post-card p {
+  margin-bottom: 15px;
+}
+
+.post {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #63E2C6;
+  border-radius: 10px;
+}
+
+.add-post-button {
+  background-color: #399e5a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+}
+
+.add-post-button:hover {
+  background-color: #5abcb9;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.add-post {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #6EF9F5;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-post form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
+
+.add-post label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.add-post input,
+.add-post textarea {
+  padding: 5px;
+}
+
+button {
+  background-color: #399E5A;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2E8047;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
